@@ -1,0 +1,17 @@
+ body {
+    background-color: bisque;
+ }
+
+ h1 {
+    text-align: center;
+    color: violet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+}
