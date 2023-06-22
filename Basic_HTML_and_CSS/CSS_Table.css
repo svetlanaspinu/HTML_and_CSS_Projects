@@ -1,0 +1,19 @@
+table {
+    border: 1 px solid salmon;
+}
+
+td:hover {
+    background-color: brown;
+    color: black;
+}
+
+tr, th {
+    background-color: aqua;
+    color: cadetblue;
+}
+
+tr, td {
+    background-color: olive;
+    color: beige;
+}
+
