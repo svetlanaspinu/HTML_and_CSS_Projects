@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+h1 {
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type='text'] {
+    
+    border: 2px solid salmon;
+    margin: 5px;
+    width: 25%;
+    border-radius: 7px;
+    
+}
+
