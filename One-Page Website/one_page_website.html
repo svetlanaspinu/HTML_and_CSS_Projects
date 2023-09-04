@@ -4,6 +4,7 @@
         <title> Flower Power</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../One-Page Website/css/one_page_website.css">
+        <script src="../One-Page Website/JS/one_page_website.js"></script>
     </head>
 
     <body>
@@ -23,54 +24,76 @@
             <p>What are your favorite flowers?</p>
           </div>  
         </div>
-        <!-- Photo Container 1-->
+
+        <!-- Images used to open the lightbox -->
+    <div class="row">
+        <div class="column">
+            <img src="../One-Page Website/images/flowers/flower_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../One-Page Website/images/flowers/flower_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../One-Page Website/images/flowers/flower_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+    </div>
+
+<!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/flowers/flower_1.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/flowers/flower_2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/flowers/flower_3.png" style="width:100%">
+      </div>
+
+       <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+        <img class="demo" src="images/flowers/flower_1.png" onclick="currentSlide(1)" alt="Tulpins">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/flowers/flower_2.png" onclick="currentSlide(2)" alt="Sunflowers">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/flowers/flower_3.png" onclick="currentSlide(3)" alt="Lily">
+      </div>
+    </div>
+
+
+    <!--Video Container-->
+    <div>
+        <a href="https://www.youtube.com/watch?v=LjCzPp-MK48">Time-Lapse: Watch Flowers Bloom Before Your Eyes | Short Film Showcase</a>
+
+     </div>
+    <!--End video container -->
+
+    <!--About Us page-->
+    <div id="contact" >
         <div>
-            <div>
-                <img src="./images/flowers/flower_1.png" alt="Tulips">
-                <div>
-                    <h3>Click to Enlarge</h3>
-                    <p>Tulips (Tulipa) are a genus of spring-blooming flowers. 
-                        The name "tulip" is thought to be derived from a Persian word for turban, which it may have been thought to resemble by those who discovered it.
-                    </p>
-
-                </div>
-            </div>
-            <!-- End Photo Container 1-->
-
-            <!-- Photo Container 2-->
-        <div>
-            <div>
-                <img src="./images/flowers/flower_2.png" alt="SunFlower">
-                <div>
-                    <h3>Click to Enlarge</h3>
-                    <p>The common sunflower (Helianthus annuus) is a large annual forb of the genus Helianthus. It is commonly grown as a crop for its edible oily seeds.</p>
-
-                </div>
-            </div>
-            <!-- End Photo Container 2-->
-
-            <!-- Photo Container 3-->
-            <div>
-                <img src="./images/flowers/flower_3.png" alt="Lilies">
-                <div>
-                    <h3>Click to Enlarge</h3>
-                    <p>Lilies are a group of flowering plants which are important in culture and literature in much of the world.</p>
-
-                </div>
-            </div>
-            <!-- End Photo Container 3-->
-
-            <!--Video Container-->
-            <div>
-                <a href="https://www.youtube.com/watch?v=LjCzPp-MK48">Time-Lapse: Watch Flowers Bloom Before Your Eyes | Short Film Showcase</a>
-            </div>
-            <!--End video container -->
-
-        <!--About Us page-->
-        <div id="contact">
-            <div>
-              <h3>Contact Us</h3>
-              <p>You can contact us by calling: 098879234 <br>
+        <h3>Contact Us</h3>
+            <p>You can contact us by calling: 098879234 <br>
                  Email: flower_power@yahoo.com
               </p>
               <h4>Please provide us with ypur basic contact information.</h4>
